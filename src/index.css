@@ -1,0 +1,238 @@
+.hero-video {
+  -o-object-fit: cover;
+  object-fit: cover; /* Cover the area, cropping if necessary */
+  z-index: -1; /* Behind other content */
+}
+
+ul {
+  gap: clamp(0.5rem, 5vw, 7.625rem);
+}
+ul li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+ul li a {
+  text-decoration: none;
+  transition: background-color 0.6s ease;
+  border-radius: 10px;
+}
+ul li a:hover {
+  background-color: rgb(40, 55, 68);
+}
+
+.custom-toggler {
+  border-color: rgb(255, 255, 255) !important;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.custom-toggler:focus {
+  outline: 2px solid rgb(255, 255, 255) !important;
+  box-shadow: none !important;
+}
+
+.hero-content {
+  padding-top: 140px;
+  letter-spacing: 3px;
+  gap: 15px;
+}
+.hero-content h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+.hero-content p {
+  font-size: 30px;
+  font-weight: 200;
+}
+.hero-content a {
+  background-color: rgb(40, 55, 68);
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    width: 100%;
+  }
+}
+.container-main-test {
+  margin: 0 400px;
+}
+
+.section-content p {
+  max-width: 450px;
+  letter-spacing: 2px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0; /* Start the line from the right side */
+  width: 100vw; /* Extend the line beyond the viewport width */
+  height: 1px; /* Line thickness */
+  background-color: #000; /* Line color */
+}
+
+@media (max-width: 1250px) {
+  .container-main-test {
+    margin: 0px;
+  }
+  .section-main-block {
+    padding: 0 20px;
+  }
+  .section-content {
+    gap: 30px; /* Reduced gap for when items are stacked vertically */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-content p {
+    max-width: 100%;
+  }
+}
+.background-cl {
+  background: linear-gradient(90deg, #637B8E 0%, #8195A4 26%, #B78055 100%);
+}
+
+.section2-main {
+  margin: 0 400px;
+}
+
+/* iPhone frame: ensures it's responsive and scales */
+.iphone-frame {
+  width: auto;
+  height: 450px;
+  display: block;
+  position: relative;
+}
+
+/* Video container: relative to control the video position */
+.video-container {
+  position: relative;
+  width: 250px;
+}
+
+/* Video inside the phone: absolute positioning inside the frame */
+.phone-video {
+  position: absolute;
+  top: 13%; /* Adjust to fit the iPhone screen */
+  left: 5.5%; /* Adjust based on the phone screen's left edge */
+  width: 192px; /* Adjust video width to fit inside the phone */
+  height: 330px; /* Adjust height to fit inside the phone */
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensures the video covers the entire area without distortion */
+  z-index: 1;
+}
+
+/* Ensure the text is responsive */
+.section2-text {
+  background: linear-gradient(90deg, #283744 0%, #394855 26%, #5B3F2A 100%);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: white;
+  width: 500px;
+  text-align: center;
+}
+.section2-text p {
+  width: 100%;
+}
+.section2-text a {
+  display: inline-block; /* Ensures padding works correctly */
+  text-decoration: none;
+  background: linear-gradient(90deg, #637B8E 0%, #8195A4 26%, #B78055 100%);
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+.section2-text a:hover {
+  background-color: rgba(91, 63, 42, 0.9); /* Slightly lighter on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+.section2-text a:active {
+  background-color: rgba(91, 63, 42, 0.8); /* Darker on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+  transform: translateY(0); /* Remove lift effect */
+}
+.section2-text span {
+  font-weight: bold;
+}
+
+.section2-title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0; /* Start the line from the right side */
+  width: 100vw; /* Extend the line beyond the viewport width */
+  height: 1px; /* Line thickness */
+  background-color: #ffffff; /* Line color */
+}
+
+/* Media Query for screens 1250px and below */
+@media (max-width: 1300px) {
+  .section2-text a {
+    margin-top: 10px;
+  }
+  .section2-text {
+    width: 100%;
+  }
+  /* Adjust the main section padding and center it */
+  .section2-main {
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  /* Adjust the layout of the content section */
+  .section-content {
+    display: flex; /* Ensure flex properties are applied */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically if needed */
+    gap: 30px; /* Space between items */
+  }
+  /* Center the video-container */
+  .video-container {
+    padding-top: 15px;
+    margin: 0 auto;
+    width: 215px;
+  }
+  /* Ensure the h4 maintains a 20px left margin */
+  .section2-title {
+    margin-left: 20px;
+    text-align: center; /* Optional: Center the text if desired */
+  }
+  .phone-video {
+    top: 16%; /* Adjust to fit the iPhone screen */
+    left: 6.4%; /* Adjust based on the phone screen's left edge */
+  }
+}
+.c-footer img {
+  height: auto;
+  width: 80px;
+}
+.c-footer p {
+  color: white;
+  font-size: 16px;
+}
+.c-footer span {
+  font-weight: bold;
+}
+.c-footer .tabuas-img {
+  height: 50px !important;
+  width: auto !important;
+}
+
+@media (max-width: 1250px) {
+  .s-b-footer-content {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=index.css.map */

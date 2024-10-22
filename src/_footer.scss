@@ -1,0 +1,26 @@
+.c-footer {
+    img {
+        height: auto;
+        width: 80px;
+    }
+
+    p {
+        color: white;
+        font-size: 16px;
+    }
+    span {
+        font-weight: bold;
+    }
+    
+    .tabuas-img {
+        height: 50px !important;
+        width: auto !important;
+    }   
+
+}
+
+@media (max-width: 1250px) {
+    .s-b-footer-content {
+        width: 100% !important;
+    }
+}

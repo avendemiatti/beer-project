@@ -1,0 +1,135 @@
+.background-cl {
+    background: linear-gradient(90deg, #637B8E 0%, #8195A4 26%, #B78055 100%);
+}
+.section2-main {
+    margin: 0 400px;
+}
+
+/* iPhone frame: ensures it's responsive and scales */
+.iphone-frame {
+    width: auto; 
+    height: 450px; 
+    display: block;
+    position: relative;
+}
+
+/* Video container: relative to control the video position */
+.video-container {
+    position: relative;
+    width: 250px; 
+}
+
+/* Video inside the phone: absolute positioning inside the frame */
+.phone-video {
+    position: absolute;
+    top: 13%; /* Adjust to fit the iPhone screen */
+    left: 5.5%; /* Adjust based on the phone screen's left edge */
+    width: 192px; /* Adjust video width to fit inside the phone */
+    height: 330px; /* Adjust height to fit inside the phone */
+    object-fit: cover; /* Ensures the video covers the entire area without distortion */
+    z-index: 1;
+}
+
+/* Ensure the text is responsive */
+.section2-text {
+    background: linear-gradient(90deg, #283744 0%, #394855 26%, #5B3F2A 100%);
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: white;
+    width: 500px;
+    text-align: center;
+    
+
+    p {
+        width: 100%;
+    }
+
+
+    a {
+        display: inline-block; /* Ensures padding works correctly */
+        text-decoration: none; 
+        background: linear-gradient(90deg, #637B8E 0%, #8195A4 26%, #B78055 100%);
+        padding: 15px 20px; 
+        border-radius: 10px; 
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+        cursor: pointer; /* Changes cursor to pointer on hover */
+    }
+    
+    a:hover {
+        background-color: rgba(91, 63, 42, 0.9); /* Slightly lighter on hover */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+        transform: translateY(-2px); /* Slight lift effect */
+    }
+    
+    a:active {
+        background-color: rgba(91, 63, 42, 0.8); /* Darker on click */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+        transform: translateY(0); /* Remove lift effect */
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.section2-title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0; /* Start the line from the right side */
+    width: 100vw; /* Extend the line beyond the viewport width */
+    height: 1px; /* Line thickness */
+    background-color: #ffffff; /* Line color */
+}
+
+/* Media Query for screens 1250px and below */
+@media (max-width: 1300px) {
+
+    .section2-text a {
+        margin-top: 10px;
+    }
+
+    .section2-text {
+        width: 100%;
+    }
+
+
+    /* Adjust the main section padding and center it */
+    .section2-main {
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+
+    /* Adjust the layout of the content section */
+    .section-content {
+        display: flex; /* Ensure flex properties are applied */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically if needed */
+        gap: 30px; /* Space between items */
+    }
+
+    /* Center the video-container */
+    .video-container {
+        padding-top: 15px;
+        margin: 0 auto;
+        width: 215px;
+    }
+
+    /* Ensure the h4 maintains a 20px left margin */
+    .section2-title {
+        margin-left: 20px;
+        text-align: center; /* Optional: Center the text if desired */
+    }
+
+    .phone-video {
+        top: 16%; /* Adjust to fit the iPhone screen */
+        left: 6.4%; /* Adjust based on the phone screen's left edge */
+    }
+
+}

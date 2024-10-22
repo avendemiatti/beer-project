@@ -1,0 +1,46 @@
+.container-main-test {
+margin: 0 400px;
+}
+
+
+.section-content {
+
+     p {
+   max-width: 450px;
+   letter-spacing: $spacamento-01;
+        }
+    }
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0; /* Start the line from the right side */
+    width: 100vw; /* Extend the line beyond the viewport width */
+    height: 1px; /* Line thickness */
+    background-color: #000; /* Line color */
+
+}
+
+@media (max-width: 1250px) {
+
+
+    .container-main-test {
+        margin: 0px;
+    }
+
+    .section-main-block {
+        padding: 0 20px;
+    }
+
+    .section-content {
+        gap: 30px; /* Reduced gap for when items are stacked vertically */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-content p {
+        max-width: 100% 
+    }
+}
