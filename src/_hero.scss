@@ -63,7 +63,18 @@
   }
 
   @media (max-width: 600px) {
-    .hero-content h1 {
+    .hero-content {
+    
+      h1 {
       width: 100%;
+      font-size: 35px;
     }
-}
+      p {
+        font-size: 25px;
+      }
+  }
+  .hero-video video {
+    height: 50vh !important;
+  }
+
+  }
