@@ -65,6 +65,10 @@ ul li a:hover {
   .hero-content p {
     font-size: 25px;
   }
+  .hero-container {
+    margin: 0px !important;
+    gap: 0px !important;
+  }
 }
 .container-main-test {
   margin: 0 400px;
@@ -102,7 +106,8 @@ ul li a:hover {
     max-width: 100%;
   }
   .section1-container {
-    margin-top: 5px !important;
+    margin: 0px !important;
+    padding: 0px !important;
   }
 }
 .background-cl {
