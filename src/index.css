@@ -55,6 +55,9 @@ ul li a:hover {
 }
 
 @media (max-width: 600px) {
+  .hero-content {
+    padding-top: 80px;
+  }
   .hero-content h1 {
     width: 100%;
     font-size: 35px;
@@ -62,8 +65,9 @@ ul li a:hover {
   .hero-content p {
     font-size: 25px;
   }
-  .hero-video video {
-    height: 50vh !important;
+  .hero-container {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
 .container-main-test {

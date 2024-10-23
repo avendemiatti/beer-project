@@ -64,6 +64,8 @@
 
   @media (max-width: 600px) {
     .hero-content {
+
+      padding-top: 80px;
     
       h1 {
       width: 100%;
@@ -73,8 +75,10 @@
         font-size: 25px;
       }
   }
-  .hero-video video {
-    height: 50vh !important;
+
+  .hero-container {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 
   }
